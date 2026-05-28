@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col">
                 <h1>Cadastro</h1>
-                <form action="" method="post">
+                <form action="cadastro_script.php" method="post">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome completo</label>
                         <input type="text" class="form-control" name="nome">
