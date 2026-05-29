@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <title>Cadastro</title>
   </head>
   <body>
     <div class="container">
@@ -24,10 +23,11 @@
                 
                 if (mysqli_query($conn, $sql)) {
                     msg("$nome cadastrado com sucesso!", 'success');
-                } else
+                } else {
                     msg("$nome não cadastrado!", 'danger');
+                }
             ?>
-            <a href="index.php" class="btn btn-primary">Voltar</a>
+            <a href="index.php" class="btn btn-primary btn-lg">Voltar</a>
         </div>
     </div>
 
