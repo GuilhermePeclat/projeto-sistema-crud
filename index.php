@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,12 +29,12 @@
                 <div class="d-flex gap-2">
 
                     <a href="cadastro.php"
-                       class="btn btn-primary btn-lg">
+                        class="btn btn-primary btn-lg">
                         Cadastrar
                     </a>
 
                     <a href="listar.php"
-                       class="btn btn-outline-secondary btn-lg">
+                        class="btn btn-outline-secondary btn-lg">
                         Consultar
                     </a>
 
@@ -46,4 +47,5 @@
     </div>
 
 </body>
+
 </html>
