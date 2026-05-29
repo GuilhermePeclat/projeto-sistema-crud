@@ -4,9 +4,11 @@
     $password = "";
     $bd = "sistema_crud";
 
-    if (mysqli_connect($server, $user, $password, $bd)) {
-        echo "Conectado";
-    } else {
-        echo "Erro!";
+    $conn = mysqli_connect($server, $user, $password, $bd);
+
+    function msg($texto, $tipo) {
+        echo "<div class='alert alert-$tipo' role='alert'>
+            $texto
+            </div>";
     }
 ?>

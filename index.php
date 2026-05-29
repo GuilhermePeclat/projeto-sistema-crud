@@ -15,23 +15,23 @@
                 <form action="cadastro_script.php" method="post">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome completo</label>
-                        <input type="text" class="form-control" name="nome">
+                        <input type="text" class="form-control" name="nome" required>
                     </div>
                     <div class="mb-3">
                         <label for="endereco" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" name="endereco">
+                        <input type="text" class="form-control" name="endereco" required>
                     </div>                    
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" name="telefone">
+                        <input type="text" class="form-control" name="telefone" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email">
+                        <input type="email" class="form-control" name="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="nascimento" class="form-label">Nascimento</label>
-                        <input type="date" class="form-control" name="dt_nascimento">
+                        <input type="date" class="form-control" name="data_nascimento" required>
                     </div>
                     <div class="mb-3">
                         <button type="submit" class="btn btn-success">Enviar</button>
