@@ -16,3 +16,4 @@ function msg($texto, $tipo)
             $texto
             </div>";
 }
+

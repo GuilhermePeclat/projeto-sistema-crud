@@ -15,7 +15,10 @@
 
   include "conexao.php";
 
-  $sql = "SELECT * FROM pessoas WHERE nome LIKE '%$pesquisa%'";
+  $sql = "SELECT *,
+        DATE_FORMAT(data_nascimento, '%d/%m/%Y') as data_formatada
+        FROM pessoas
+        WHERE nome LIKE '%$pesquisa%'";
 
   $dados = mysqli_query($conn, $sql);
 
@@ -38,6 +41,7 @@
           <th>Telefone</th>
           <th>Email</th>
           <th>Nascimento</th>
+          <th>Ações</th>
         </tr>
       </thead>
 
@@ -49,7 +53,7 @@
           $endereco = $linha['endereco'];
           $telefone = $linha['telefone'];
           $email = $linha['email'];
-          $data_nascimento = $linha['data_nascimento'];
+          $data_nascimento = $linha['data_formatada'];
 
           echo "<tr>
             <td>$nome</td>
@@ -57,6 +61,10 @@
             <td>$telefone</td>
             <td>$email</td>
             <td>$data_nascimento</td>
+            <td width=200px>
+              <a href = 'editar.php?id=$cod_pessoa' class='btn btn-success'> Editar</a>
+              <a href = '#' class='btn btn-danger'> Excluir</a>
+            </td>
           </tr>";
         }
         ?>
